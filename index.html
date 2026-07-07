@@ -259,16 +259,18 @@
         /* ===== 3D CARD CONTAINER ===== */
         .products-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             padding: 2rem;
             position: relative;
             z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         /* ===== PRODUCT CARDS ===== */
         .product-card {
-            height: 280px;
+            aspect-ratio: 3/4;
             position: relative;
             cursor: pointer;
             overflow: hidden;
@@ -579,8 +581,8 @@
             }
 
             .products-container {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 1.5rem;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
                 padding: 1rem;
             }
 
